@@ -17,7 +17,7 @@
         android:layout_marginRight="48dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="Mensagem"
+        android:hint="@string/mensagem"
         android:inputType="textShortMessage|textAutoCorrect"
         app:layout_constraintEnd_toStartOf="@+id/btnEnviar"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:onClick="enviaMensagem"
-        android:text="Enviar"
+        android:text="@string/enviar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
