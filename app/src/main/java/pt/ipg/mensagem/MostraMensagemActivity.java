@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MostraMensagemActivity extends AppCompatActivity {
@@ -17,5 +19,9 @@ public class MostraMensagemActivity extends AppCompatActivity {
         String mensagem = intent.getStringExtra("MENSAGEM");
 
         Toast.makeText(this,mensagem, Toast.LENGTH_LONG).show();
+
+
+        //
+        TextView txtMensagem = (TextView) findViewById(R.id.txtMostraMensagem);
     }
 }
