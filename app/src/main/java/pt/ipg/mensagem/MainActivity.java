@@ -19,19 +19,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void enviaMensagem(View view) {
-        Intent intent = new Intent(this, MostraMensagemActivity.class);
 
-        EditText txtMensagem = (EditText) findViewById(R.id.txtMensagem);
-
-
+        EditText txtMensagem = findViewById(R.id.txtMensagem);
         String mensagem = txtMensagem.getText().toString();
 
+        Intent intent = new Intent(this, MostraMensagemActivity.class);
         intent.putExtra("MENSAGEM",mensagem);
 
         //todo:enviar mensagem
 
 
         //Colocar mensagem aparecer na textview
+
 
 
 
